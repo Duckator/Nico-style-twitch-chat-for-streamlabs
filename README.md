@@ -3,7 +3,7 @@
 To use:
 
 
-nicoTwitchChat.css on github
+nicoTwitchChat.css on github  
 Copy the text from nicoTwitchChat.css 
 Open up streamlabs' dashboard
 Go to Chat Box
