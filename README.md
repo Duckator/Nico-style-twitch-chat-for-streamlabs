@@ -3,7 +3,7 @@
 To use:  
 
 -Open nicoTwitchChat.css on github  
--Copy the text from nicoTwitchChat.css 
+-Copy the text from nicoTwitchChat.css   
 -Open up streamlabs' dashboard  
 -Go to Chat Box  
 -Scroll down to Enable Custom HTML/CSS and hit Enabled  
