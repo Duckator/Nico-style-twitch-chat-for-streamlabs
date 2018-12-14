@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+/*Basic scrolling animation.  If the text lingers on screen increase {left:120%;} and {right: 120%;}*/
+@keyframes LRMove {    
+    0% {left: 120%;}
+    100% {left: 0%;} 
+}
+
+@keyframes RLMove {
+    0% {right: 0%;}
+    100% {right: 120%;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+    background: {background_color};
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: {font_size};
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+#log>div {
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#log>div {
+    display: table-row;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message,#log .meta {
+    vertical-align: top;
+    display: table-cell;
+    padding-bottom: 0.1em;
+}
+
+#log .meta {
+    width: 35%;
+    text-align: right;
+    padding-right: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#log .message {
+	/*chat transparency*/
+    opacity: .8;    
+    position: relative;
+	/*Adjust scroll speed here. Replace 3s*/
+    animation: LRMove 3s linear, RLMove 3s linear 3s forwards;   
+    -webkit-animation: LRMove 3s linear, RLMove 3s linear 3s forwards;
+    word-wrap: break-word;
+    width: 65%;
+}
+
+.badge {
+    display: none;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+.name {
+  	display: none;
+    margin-left: 0.2em;
+}
+
+
