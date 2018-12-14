@@ -95,6 +95,7 @@ body {
     width: 65%;
 }
 
+/*Badges and usernames are disabled. Enabling them and adding them to the animation kind of breaks it. Feel free to get it working if you'd like*/
 .badge {
     display: none;
     margin-right: 0.2em;
