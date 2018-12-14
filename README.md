@@ -21,3 +21,8 @@ Extra Emotes: Enabled
 Font Size: 50px
 Hide Messages After: Always show Messages
 
+
+
+To do:
+Scroll down from top
+Randomize chat line height
