@@ -7,7 +7,7 @@
 }
 
 @keyframes RLMove {
-    0% {right: 0%;}
+    0% {right: -50%;}
     100% {right: 120%;}
 }
 
