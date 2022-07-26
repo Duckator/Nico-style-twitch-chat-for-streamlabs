@@ -7,7 +7,7 @@
 }
 
 @keyframes RLMove {
-    0% {right: 0%;}
+    0% {right: -50%;}
     100% {right: 120%;}
 }
 
@@ -31,6 +31,7 @@ body {
 }
 
 #log>div {
+    position: absolute;
 }
 
 .colon {
@@ -38,17 +39,8 @@ body {
 }
 
 #log {
-    display: table;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0 10px 10px;
     width: 100%;
-    table-layout: fixed;
-}
-
-#log>div {
-    display: table-row;
+  	height: 100%;
 }
 
 #log>div.deleted {
@@ -84,15 +76,13 @@ body {
     overflow: hidden;
 }
 
-#log .message {
+#log div {
 	/*chat transparency*/
     opacity: .8;    
-    position: relative;
-	/*Adjust scroll speed here. Replace 3s*/
-    animation: LRMove 3s linear, RLMove 3s linear 3s forwards;   
-    -webkit-animation: LRMove 3s linear, RLMove 3s linear 3s forwards;
-    word-wrap: break-word;
-    width: 65%;
+	/*Adjust scroll speed here. Replace 5s*/
+    animation: RLMove 5s linear forwards;  
+  	white-space: nowrap
+  
 }
 
 /*Badges and usernames are disabled. Enabling them and adding them to the animation kind of breaks it.
@@ -110,5 +100,4 @@ body {
   	display: none;
     margin-left: 0.2em;
 }
-
 
