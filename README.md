@@ -13,13 +13,16 @@ To use:
 --(This probably works with xsplit too but I haven't tested it)  
 
 
-
 Recommended streamlabs Settings:  
 -Badges: All disabled  
 -Extra Emotes: Enabled  
 -Font Size: 50px  
 -Hide Messages After: Always show Messages  
 
+
+# This css still works but is not being supported.
+-I recommend this if you need something more
+https://github.com/tekigg/niconico-twitch
 
 
 
